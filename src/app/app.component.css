@@ -1,0 +1,95 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 16px;
+  flex-grow: 1;
+  box-sizing: border-box;
+  min-height: calc(100vh - 64px);
+  display: flex;
+  flex-direction: column;
+}
+
+mat-toolbar {
+  margin-bottom: 16px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.edit-button {
+  margin-left: 8px;
+  color: rgb(72, 63, 63);
+}
+
+h4, mat-raised-button, mat-form-field, input, button-add {
+  font-size: 18px;
+  padding: 10px;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.mat-form-field, .button-add {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 16px;
+}
+
+.list-section-done-purchased {
+  margin-top: 16px;
+  background-color: #9fc576;
+}
+
+.list-section-not-purchased {
+  margin-top: 16px;
+  background-color: #ec6d6d;
+}
+
+.item-row, .item-row-not-purchased {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4px auto;
+  padding: 10px;
+  border-radius: 4px;
+  width: 60%;
+}
+
+.item-content {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.delete-button {
+  margin-left: 8px;
+}
+
+.item-name {
+  flex-grow: 1;
+  padding-left: 8px;
+}
+
+.item-row {
+  background-color: #aed984;
+}
+
+.item-row-not-purchased {
+  background-color: #d09c9c;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: rgb(0, 0, 0);
+}
+
+.mat-icon {
+  margin-left: auto;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 8px;
+  }
+
+  .mat-form-field, .button-add {
+    width: 100%;
+  }
+}
